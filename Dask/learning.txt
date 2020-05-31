@@ -1,0 +1,34 @@
+1. Delayed
+    promotes parallelize if function can run.
+    Eg Execute a function on every list item.
+
+    Important Keywords:
+    delayed(function_name)(args)
+    compute() -- Call compute method to execute the function.
+
+2. Dask Arrays
+    Dask array provides a parallel, larger-than-memory,
+     n-dimensional array using blocked algorithms.
+     Simply put: distributed Numpy.
+
+    Notice that the dask array computation ran in 4 seconds,
+    but used 29.4 seconds of user CPU time.
+
+    The numpy computation ran in 19.7 seconds and used 19.6 seconds of user CPU time.
+
+    Dask finished faster, but used more total CPU time because Dask was able to transparently
+    parallelize the computation because of the chunk size.
+
+3. Dask DataFrames
+    Pandas is great for tabular datasets that fit in memory.
+    Dask becomes useful when the dataset you want to analyze is larger than your machine's RAM
+
+    When computing all of the above, we sometimes did the same operation more than once.
+    For most operations, dask.dataframe hashes the arguments,
+    allowing duplicate computations to be shared, and only computed once.
+
+    Map Partition :
+    We dont have dask support for all the pandas functions/libraries.
+    If a method is not available then we need to use map partition method
+
+    Things which are not implemented in dask yet, for many of those cases map partition will help .

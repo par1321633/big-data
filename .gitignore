@@ -1,0 +1,15 @@
+.idea
+Dask/.idea/*
+Dask/.ipynb_checkpoints/*
+dask-pyspark-rd/.idea/*
+dask-pyspark-rd/*/.ipynb_checkpoints/*
+dask-pyspark-rd/Python-and-Spark-for-Big-Data-master/*
+PySpark/Data/*
+PySpark/.idea/*
+PySpark/*/.ipynb_checkpoints/*
+Dask/dask-tutorial-scipy-2018/data/*
+Dask/dask-tutorial-scipy-2018/static/*
+Dask/dask-tutorial-scipy-2018/.idea/*
+Dask/dask-tutorial-scipy-2018/.ipynb_checkpoints/*
+dask-pyspark-rd/Data/*
+
